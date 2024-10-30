@@ -1,0 +1,130 @@
+/* styles/globals.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro e opaco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Modal acima de outros conteúdos */
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 30px; /* Maior espaçamento */
+  border-radius: 15px; /* Bordas arredondadas */
+  width: 90%; /* Aumente a largura do modal (90% da largura da tela) */
+  max-width: 1400px; /* Defina uma largura máxima maior */
+  max-height: 90%; /* Aumente a altura máxima */
+  overflow-y: auto; /* Permite rolagem vertical se necessário */
+  position: relative; /* Para que os botões se posicione corretamente */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Espaço entre o título e os botões */
+  align-items: center; /* Alinha os itens verticalmente */
+  margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5rem; /* Tamanho do texto do cabeçalho */
+  color: #333; /* Cor do texto */
+}
+
+.headerButtons {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.downloadButton, .closeButton {
+  padding: 10px 15px; /* Espaçamento interno */
+  border: none;
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.downloadButton {
+  background-color: #007bff; /* Azul para o botão de download */
+  color: white;
+}
+
+.downloadButton:hover {
+  background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+.closeButton {
+  background-color: #dc3545; /* Vermelho para o botão de fechar */
+  color: white;
+}
+
+.closeButton:hover {
+  background-color: #c82333; /* Vermelho escuro ao passar o mouse */
+}
+
+.dataContainer {
+  display: flex; /* Alinha as colunas lado a lado */
+  justify-content: space-between;
+  margin-top: 20px; /* Espaço acima do contêiner */
+}
+
+.personalInfoContainer,
+.financasContainer {
+  width: 48%; /* Define a largura das colunas */
+  overflow-y: auto; /* Permite rolagem vertical */
+  max-height: 70vh; /* Limite de altura para permitir a rolagem */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo clara para as seções */
+  border: 1px solid #ddd; /* Borda para delimitar as seções */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.financasContainer {
+  margin-left: 20px; /* Espaço à esquerda */
+}
+
+.dataItem {
+  margin-bottom: 15px; /* Espaço entre dados de diferentes pessoas */
+}
+
+.personalInfo, .financasInfo {
+  margin-bottom: 10px; /* Espaço entre os blocos de informações */
+}
+
+.financaItem {
+  margin-bottom: 10px; /* Espaço entre as informações financeiras */
+}
+
+.hr {
+  border: 1px solid #ddd; /* Estilo da linha horizontal */
+  margin: 10px 0; /* Espaço acima e abaixo da linha */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Opcional: Ajuste a altura conforme necessário */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
